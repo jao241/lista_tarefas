@@ -11,3 +11,94 @@
     font-size: 28px;
     text-align: center;
 }
+
+@media(max-width: 400px) {
+  .main {
+    max-width: 80%;
+  }
+}
+
+/* Form  */
+.form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type='text'] {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  min-width: 80%;
+  border-radius: 4px;
+}
+
+.form button[type='submit'] {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: #f04c65e3;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.form button[type='submit']:hover {
+  border: 2px solid #ccc;
+  background-color: #f04c65ad;
+}
+
+@media(max-width: 400px) {
+  .form input[type='text'] {
+    min-width: 60%;
+  }
+}
+
+/* Tarefas */
+
+.tarefas {
+  margin-top: 50px;
+  padding: 0 40px;
+}
+
+.tarefas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  transition: all .3s ease-in-out;
+}
+
+.tarefas li:hover {
+  background-color: #f04c6527;
+  border-radius: 2px;
+}
+
+.tarefas li .edit {
+  margin-right: 5px;
+  color: #51c5de;
+  cursor: pointer;
+}
+
+.tarefas li .delete {
+  color: #d11919cb;
+  cursor: pointer;
+}
+
+.tarefas li div {
+  display: flex;
+  align-items: center;
+}
+
+@media(max-width: 400px) {
+  .tarefas {
+    padding: 0;
+  }
+}
